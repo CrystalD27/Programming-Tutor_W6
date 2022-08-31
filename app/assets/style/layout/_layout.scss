@@ -11,4 +11,41 @@
     text-indent: 101%;
     white-space: nowrap;
 
+    @include phone {
+        background-image: url("../images/logo2.svg");
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+
+
+header {
+    position: relative;
+
+    &::before {
+        content: '';
+
+        width: 50%;
+        height: 2px;
+        background-color: $primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+
+    }
+
+    &::after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: $secondary;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+
 }
