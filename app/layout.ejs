@@ -13,25 +13,47 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
+
 </head>
 
 <body>
-  <header class="header bg-dark-d container-fluid">
-    <nav class="navbar p-0 container d-flex text-center ">
-      <div class="nav__logo">
-        <h1><a href="#">Coding Home</a></h1>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark-d p-0">
+    <div class="container ">
+      <h1 class=" py-4"><a class="navbar-brand" href="#">Coding Home</a></h1>
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined text-primary">
+          drag_handle
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-6">
+          <li class="nav-item text-center ">
+            <a class="nav-link active text-light" aria-current="page" href="#">首頁</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link text-light" href="#">課程介紹</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a class="nav-link d-flex text-light" href="#">登入
+              <span class="material-symbols-outlined">
+                account_circle
+              </span>
+            </a>
+          </li>
+
+        </ul>
       </div>
-      <ul class="nav__item list-unstyled d-flex justify-content-between ">
-        <li class="me-7 pt-5 pb-5"><a class="text-light text-decoration-none " href="#"> 首頁</li></a>
-        <li class="me-7 pt-5 pb-5"><a class="text-light text-decoration-none " href="#">課程介紹</li></a>
-        <li class="pt-5 pb-5"><a class="text-light text-decoration-none " href="#"><span
-              class="material-symbols-outlined">
-              account_circle
-            </span></a></li>
-        <a class="text-light text-decoration-none mt-5 mb-5" href="#">登入</a>
-      </ul>
-    </nav>
-    <div class="btn_hambuger"></div>
+    </div>
+  </nav>
+
+  <div class="btn__hamburger">
+    <div class="btn_hamburger__position">
+
+    </div>
+  </div>
   </header>
   <main>
     <%- contents %>

@@ -1,4 +1,4 @@
-.nav__logo h1 a {
+.navbar-brand {
 
     display: block;
     width: 174.42px;
@@ -15,13 +15,18 @@
         background-image: url("../images/logo2.svg");
         width: 24px;
         height: 24px;
+        position: absolute;
+        top: 24px;
+        bottom: 24px;
     }
+
 
 }
 
 
 
-header {
+
+.navbar {
     position: relative;
 
     &::before {
@@ -48,4 +53,14 @@ header {
 
     }
 
+
+
+}
+
+.collapse ul {
+    font-size: 18px;
+
+    @include pad {
+        gap: 24px !important;
+    }
 }
