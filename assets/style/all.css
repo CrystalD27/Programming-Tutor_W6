@@ -14243,7 +14243,7 @@ li {
   margin: 0;
 }
 
-.nav__logo h1 a, .nav__logo .h1 a {
+.navbar-brand {
   display: block;
   width: 174.42px;
   height: 42px;
@@ -14257,18 +14257,21 @@ li {
 }
 
 @media (max-width: 767px) {
-  .nav__logo h1 a, .nav__logo .h1 a {
+  .navbar-brand {
     background-image: url("../images/logo2.svg");
     width: 24px;
     height: 24px;
+    position: absolute;
+    top: 24px;
+    bottom: 24px;
   }
 }
 
-header {
+.navbar {
   position: relative;
 }
 
-header::before {
+.navbar::before {
   content: '';
   width: 50%;
   height: 2px;
@@ -14278,7 +14281,7 @@ header::before {
   left: 0;
 }
 
-header::after {
+.navbar::after {
   content: '';
   width: 50%;
   height: 2px;
@@ -14286,6 +14289,16 @@ header::after {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.collapse ul {
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .collapse ul {
+    gap: 24px !important;
+  }
 }
 
 .index__h1 {
