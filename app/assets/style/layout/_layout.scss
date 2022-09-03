@@ -24,8 +24,6 @@
 }
 
 
-
-
 .navbar {
     position: relative;
 
@@ -38,6 +36,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
+
 
 
     }
@@ -53,6 +52,21 @@
 
     }
 
+    @include pad {
+        &-collapse {
+            position: absolute;
+            top: 98px;
+            left: 0;
+            width: 100%;
+
+            @include phone {
+                top: 56px;
+            }
+        }
+
+        /*拿掉後，導覽列的線會在menu的尾端*/
+
+    }
 
 
 }
@@ -62,5 +76,6 @@
 
     @include pad {
         gap: 24px !important;
+        /*是否只能用important去蓋*/
     }
 }
