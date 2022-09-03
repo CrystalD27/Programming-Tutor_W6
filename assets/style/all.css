@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -14239,7 +14240,8 @@ img {
 }
 
 ul,
-li {
+li, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+p {
   margin: 0;
 }
 
@@ -14291,6 +14293,24 @@ li {
   right: 0;
 }
 
+@media (max-width: 991px) {
+  .navbar {
+    /*拿掉後，導覽列的線會在menu的尾端*/
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 98px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) and (max-width: 767px) {
+  .navbar-collapse {
+    top: 56px;
+  }
+}
+
 .collapse ul {
   font-size: 18px;
 }
@@ -14298,13 +14318,39 @@ li {
 @media (max-width: 991px) {
   .collapse ul {
     gap: 24px !important;
+    /*是否只能用important去蓋*/
   }
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.banner {
+  background-image: url("../images/bg_home.jpg");
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 90px);
+  background-repeat: no-repeat;
+}
+
+.banner__dot {
+  width: 10px;
+  height: 10px;
+}
+
+.program__pros li {
+  height: 264px;
+}
+
+.gradient-custom {
+  background-image: -o-linear-gradient(346deg, #62DB54, #09ACF5);
+  background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+}
+
+.gradient-text-custom {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=all.css.map */
