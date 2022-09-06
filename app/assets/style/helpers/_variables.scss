@@ -73,6 +73,7 @@ $warning: $yellow  !default;
 $danger: $red  !default;
 $light: $white  !default;
 $dark: $gray-900  !default;
+$bg-d: #2D2D2D !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -217,7 +218,7 @@ $escaped-characters: (
 $enable-caret: true !default;
 $enable-rounded: true !default;
 $enable-shadows: false !default;
-$enable-gradients: false !default;
+$enable-gradients: true !default;
 $enable-transitions: true !default;
 $enable-reduced-motion: true !default;
 $enable-smooth-scroll: true !default;
@@ -464,6 +465,7 @@ $font-weight-base: $font-weight-normal  !default;
 $line-height-base: 1.44 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
+
 
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
