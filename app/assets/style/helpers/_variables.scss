@@ -74,6 +74,8 @@ $danger: $red  !default;
 $light: $white  !default;
 $dark: $gray-900  !default;
 $bg-d: #2D2D2D !default;
+$bg-c: #1C1C1C;
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -85,10 +87,12 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark,
+  "dark": #000000,
   "dark-c": #1C1C1C,
   "dark-d": #2D2D2D,
   "index": #202020,
+  "dark-a": #1A1A1A,
+  "gray":#909090,
   ) !default;
 // scss-docs-end theme-colors-map
 
@@ -263,6 +267,7 @@ $spacers: (
   9: $spacer * 4,
   10: $spacer * 4.5,
   11: $spacer * 5,
+  12: $spacer * 6,
   ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -276,8 +281,38 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 $position-values: (
   0: 0,
   50: 50%,
-  100: 100%) !default;
-// scss-docs-end position-map
+  100: 100%,
+  4: 4px,
+  8: 8px,
+  12: 12px,
+  18: 18px,
+  22:22px,
+  28:28px,
+  32:32px,
+  38:38px,
+  42:42px,
+  48:48px,
+  52:52px,
+  58:58px,
+  62:62px,
+  68:68px,
+  72:72px,
+  78:78px,
+  86:86px,
+  96:96px,
+  106:106px,
+
+  ) !default; // scss-docs-end position-map
+$z-index-values: (
+  -1:-1,
+  1:1,
+  2:2,
+  3:3,
+  4:4,
+  5:5,
+
+  ) !default;
+
 
 // Body
 //
@@ -381,6 +416,13 @@ $border-radius: .25rem !default;
 $border-radius-sm: .2rem !default;
 $border-radius-lg: .3rem !default;
 $border-radius-pill: 50rem !default;
+$border-radius-10: 10px;
+$border-radius-12: 12px;
+$border-radius-24: 24px;
+$border-radius-32: 32px;
+$border-radius-50: 50%;
+$border-radius-100: 100%;
+
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
@@ -472,7 +514,7 @@ $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base  !default;
+$h6-font-size: $font-size-base * 1.125 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes

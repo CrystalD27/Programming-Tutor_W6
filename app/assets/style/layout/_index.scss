@@ -87,7 +87,7 @@
   font-size: 48px;
   color: $primary;
   top: -36px;
-  background: $dark;
+  background: $bg-c;
 }
 
 .program__here {
@@ -125,4 +125,217 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+//program__pros//
+
+.program__pros {
+  .pros__img {
+    height: 615px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card__content {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $bg-c;
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+      transition: .5s;
+    }
+
+    &::after {
+      content: '';
+      background-color: $light;
+      position: absolute;
+      width: 48px;
+      height: 2px;
+      left: 50px;
+      top: 316px;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.12;
+        background: #1A1A1A;
+      }
+
+      .pros__icon {
+        color: $primary;
+        opacity: 1;
+      }
+
+      &::after {
+        background-color: $primary;
+        opacity: 1;
+      }
+
+    }
+  }
+
+  .card__pros {
+    position: relative;
+
+    .card__explain {
+      position: absolute;
+      left: 50px;
+      top: 218px;
+
+      .pros__icon {
+        font-size: 28px;
+      }
+
+    }
+  }
+}
+
+/*article*/
+.article__title {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 3px;
+    background-color: $primary;
+    left: 28px;
+    bottom: -20px;
+  }
+}
+
+.article__card {
+  position: relative;
+
+
+
+  .squareRounded {
+
+    display: none;
+    width: 32px;
+    height: 32px;
+
+    &-topLeft {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 2px solid $primary;
+      border-left: 2px solid$primary;
+      border-top-left-radius: 10px;
+    }
+
+    &-topRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 2px solid $primary;
+      border-right: 2px solid $primary;
+      border-top-right-radius: 10px;
+    }
+
+    &-bottomLeft {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      border-bottom: 2px solid $primary;
+      border-left: 2px solid $primary;
+      border-bottom-left-radius: 10px;
+    }
+
+    &-bottomRight {
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      border-bottom: 2px solid $primary;
+      border-right: 2px solid $primary;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  &:hover {
+    .squareRounded {
+      display: block;
+    }
+  }
+}
+
+/*feedback*/
+.feedback {
+  background-image: url("../images/bg_share.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+
+  &__title {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 2px;
+      background-color: $primary;
+      bottom: -16px;
+      left: 200px;
+
+    }
+
+  }
+
+  &__student {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+
+
+
+}
+
+.feedback {
+  &__box {
+    position: relative;
+
+  }
+
+  &__share {
+    position: absolute;
+    left: 48px;
+    border-radius: 24px;
+  }
+
+  &__card {
+    position: relative;
+    top: 260px;
+    border-radius: 24px 24px 24px 0;
+  }
+
+  &__student {
+    position: absolute;
+    top: -68px;
+    right: 32px;
+  }
+}
+
+
+
+.join {
+
+  &__box {
+    max-width: 996px;
+  }
+
+  &__icon {
+    font-size: 106px;
+  }
+
 }
