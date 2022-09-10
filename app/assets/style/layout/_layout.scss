@@ -15,9 +15,6 @@
         background-image: url("../images/logo2.svg");
         width: 24px;
         height: 24px;
-        position: absolute;
-        top: 24px;
-        bottom: 24px;
     }
 
 
@@ -52,7 +49,7 @@
 
     }
 
-    @include pad {
+    @include phone {
         &-collapse {
             position: absolute;
             top: 98px;
@@ -64,7 +61,6 @@
             }
         }
 
-        /*拿掉後，導覽列的線會在menu的尾*/
 
     }
 
@@ -74,8 +70,8 @@
 .collapse ul {
     font-size: 18px;
 
-    @include pad {
+    @include phone {
         gap: 24px !important;
-        /*是否只能用important去蓋*/
+
     }
 }

@@ -124,7 +124,6 @@
 .card__img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -293,29 +292,22 @@
   &__student {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
   }
-
-
-
 
 }
 
 .feedback {
-  &__box {
-    position: relative;
 
-  }
 
   &__share {
-    position: absolute;
-    left: 48px;
+
     border-radius: 24px;
   }
 
   &__card {
     position: relative;
-    top: 260px;
+    margin-left: -48px;
+    top: 65%;
     border-radius: 24px 24px 24px 0;
   }
 
@@ -329,10 +321,8 @@
 
 
 .join {
+  border-radius: 24px;
 
-  &__box {
-    max-width: 996px;
-  }
 
   &__icon {
     font-size: 106px;

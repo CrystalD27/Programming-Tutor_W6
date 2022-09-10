@@ -108,6 +108,22 @@ $utilities: map-merge($utilities, ("opacity": (property: opacity,
                 class: minh,
                 values:(100:100%,
                 )),
+            "rounded": (property: border-radius,
+                class: rounded,
+                values: (null: $border-radius,
+                    0: 0,
+                    1: $border-radius-sm,
+                    2: $border-radius,
+                    3: $border-radius-lg,
+                    8:$border-radius-8,
+                    10:$border-radius-10,
+                    12:$border-radius-12,
+                    24:$border-radius-24,
+                    32:$border-radius-32,
+
+                    bs: $spacer,
+                    circle: 50%,
+                    pill: $border-radius-pill )),
 
         ));
 // $utilities: map-merge(
@@ -250,20 +266,7 @@ $utilities: map-merge($utilities, ("opacity": (property: opacity,
 //           center-bottom: center bottom,
 //         )
 //       ),
-//       "rounded": (
-//       property: border-radius,
-//       class: rounded,
-//       values: (
-//         null: $border-radius,
-//         0: 0,
-//         1: $border-radius-sm,
-//         2: $border-radius,
-//         3: $border-radius-lg,
-//         bs: $spacer,
-//         circle: 50%,
-//         pill: $border-radius-pill
-//       )
-//     ),
+
 //       "background-repeat": (
 //         property: background-repeat,
 //         class: bg,
