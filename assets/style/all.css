@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -542,6 +541,30 @@ progress {
 @media (min-width: 1200px) {
   .display-6 {
     font-size: 2.5rem;
+  }
+}
+
+.display-7 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+  .display-7 {
+    font-size: 2rem;
+  }
+}
+
+.display-8 {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+  .display-8 {
+    font-size: 1.5rem;
   }
 }
 
@@ -10534,6 +10557,30 @@ fieldset:disabled .btn {
   border-radius: 0.3rem !important;
 }
 
+.rounded-8 {
+  border-radius: 8px !important;
+}
+
+.rounded-10 {
+  border-radius: 10px !important;
+}
+
+.rounded-12 {
+  border-radius: 12px !important;
+}
+
+.rounded-24 {
+  border-radius: 24px !important;
+}
+
+.rounded-32 {
+  border-radius: 32px !important;
+}
+
+.rounded-bs {
+  border-radius: 1rem !important;
+}
+
 .rounded-circle {
   border-radius: 50% !important;
 }
@@ -16720,6 +16767,20 @@ p {
   padding: 0;
 }
 
+.gradient-custom {
+  background-image: -o-linear-gradient(346deg, #62DB54, #09ACF5);
+  background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+}
+
+.gradient-text-custom {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
 .navbar-brand {
   display: block;
   width: 174.42px;
@@ -16738,9 +16799,6 @@ p {
     background-image: url("../images/logo2.svg");
     width: 24px;
     height: 24px;
-    position: absolute;
-    top: 24px;
-    bottom: 24px;
   }
 }
 
@@ -16768,10 +16826,7 @@ p {
   right: 0;
 }
 
-@media (max-width: 991px) {
-  .navbar {
-    /*拿掉後，導覽列的線會在menu的尾*/
-  }
+@media (max-width: 767px) {
   .navbar-collapse {
     position: absolute;
     top: 98px;
@@ -16780,7 +16835,7 @@ p {
   }
 }
 
-@media (max-width: 991px) and (max-width: 767px) {
+@media (max-width: 767px) and (max-width: 767px) {
   .navbar-collapse {
     top: 56px;
   }
@@ -16790,10 +16845,9 @@ p {
   font-size: 18px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .collapse ul {
     gap: 24px !important;
-    /*是否只能用important去蓋*/
   }
 }
 
@@ -16924,7 +16978,6 @@ p {
 .card__img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -17083,22 +17136,16 @@ p {
 .feedback__student {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-}
-
-.feedback__box {
-  position: relative;
 }
 
 .feedback__share {
-  position: absolute;
-  left: 48px;
   border-radius: 24px;
 }
 
 .feedback__card {
   position: relative;
-  top: 260px;
+  margin-left: -48px;
+  top: 65%;
   border-radius: 24px 24px 24px 0;
 }
 
@@ -17108,26 +17155,12 @@ p {
   right: 32px;
 }
 
-.join__box {
-  max-width: 996px;
+.join {
+  border-radius: 24px;
 }
 
 .join__icon {
   font-size: 106px;
-}
-
-.gradient-custom {
-  background-image: -o-linear-gradient(346deg, #62DB54, #09ACF5);
-  background-image: linear-gradient(104deg, #62DB54, #09ACF5);
-}
-
-.gradient-text-custom {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
-  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
-  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
 }
 
 /*# sourceMappingURL=all.css.map */
