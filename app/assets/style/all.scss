@@ -6,6 +6,7 @@
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./helpers/mixin";
+@import "./helpers/helper";
 
 
 @import "./base/base";
@@ -13,3 +14,4 @@
 @import "./helpers/components.scss";
 @import "./layout/layout.scss";
 @import "./layout/index.scss";
+@import "./pages/courseIntro.scss";

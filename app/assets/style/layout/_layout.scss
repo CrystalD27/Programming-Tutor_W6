@@ -11,7 +11,7 @@
     text-indent: 101%;
     white-space: nowrap;
 
-    @include phone {
+    @include pad {
         background-image: url("../images/logo2.svg");
         width: 24px;
         height: 24px;
@@ -49,15 +49,15 @@
 
     }
 
-    @include phone {
+    @include pad {
         &-collapse {
             position: absolute;
             top: 98px;
             left: 0;
             width: 100%;
 
-            @include phone {
-                top: 56px;
+            @include pad {
+                top: 74px;
             }
         }
 

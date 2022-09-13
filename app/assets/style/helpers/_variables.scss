@@ -257,17 +257,30 @@ $spacer: 1rem !default;
 $spacers: (
   0: 0,
   1: $spacer * .25,
+  //4px//
   2: $spacer * .5,
+  //8px//
   3: $spacer,
   4: $spacer * 1.5,
+  //24px//
   5: $spacer * 2,
+  //32px//
   6: $spacer * 2.5,
+  //40px//
   7: $spacer * 3,
+  //48px//
   8: $spacer * 3.5,
+  //56px//
   9: $spacer * 4,
+  //64px//
   10: $spacer * 4.5,
+  //72px//
   11: $spacer * 5,
-  12: $spacer * 6,
+  //80px//
+  12:$spacer * 5.5,
+  //86px//
+  13: $spacer * 6,
+  //96px//
   ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -516,24 +529,35 @@ $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base * 1.125 !default;
-$h7-font-size: $font-size-base * 1 !default;
-$h8-font-size: $font-size-base * .875 !default;
-$h9-font-size: $font-size-base * .75 !default;
-$h10-font-size: $font-size-base * .625 !default;
+//$h7-font-size: $font-size-base * 1 !default;
+//$h8-font-size: $font-size-base * .875 !default;
+//$h9-font-size: $font-size-base * .75 !default;
+//$h10-font-size: $font-size-base * .625 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size) !default;
-// scss-docs-end font-sizes
+  //1: $h1-font-size,
+  //2: $h2-font-size,
+  //3: $h3-font-size,
+  //4: $h4-font-size,
+  //5: $h5-font-size,
+  //6: $h6-font-size) !default;
+  // scss-docs-end font-sizes
 
+  1:3rem,
+  40: 2.5rem,
+  2: 2rem,
+  3:1.5rem,
+  4:1.25rem,
+  5:1.125rem,
+  6:1rem,
+  7:0.875rem,
+  8:0.75rem,
+  9:0.625rem,
+  ) !default;
 // scss-docs-start headings-variables
-$headings-margin-bottom: $spacer * .5 !default;
+$headings-margin-bottom: $spacer *.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
