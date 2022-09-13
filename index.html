@@ -12,6 +12,11 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./assets/style/all.css">
 
 </head>
@@ -30,11 +35,11 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end bg-dark-d" id="navbarNav">
         <ul class="navbar-nav gap-6">
-          <li class="nav-item text-center ">
-            <a class="nav-link active text-light" aria-current="page" href="#">首頁</a>
+          <li class="nav-item text-center">
+            <a class="nav-link active text-light" aria-current="page" href="index.html">首頁</a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-light" href="#">課程介紹</a>
+            <a class="nav-link text-light" href="courseIntro.html">課程介紹</a>
           </li>
           <li class="nav-item align-self-center">
             <a class="nav-link d-flex text-light" href="#">登入
@@ -59,9 +64,9 @@
         <div class="banner__dot bg-light position-absolute top-0 start-100 translate-middle"></div>
         <div class="banner__dot bg-light position-absolute top-100 start-0 translate-middle"></div>
         <div class="banner__dot bg-light position-absolute top-100 start-100 translate-middle"></div>
-        <h2 class=" gradient-text-custom display-5 display-md-8">全台最豐富的程式家教</h2>
-        <h2 class="text-light pb-4 display-5 display-md-8">在實踐中化理想為現實</h2>
-        <p class="text-light text-center fs-6 fs-md-8 ">全台最專業師資｜到府程式家教｜客製化課程</p>
+        <h2 class="gradient-text-custom fs-3 fs-md-1">全台最豐富的程式家教</h2>
+        <h2 class="text-light pb-4 fs-3 fs-md-1">在實踐中化理想為現實</h2>
+        <p class="text-light text-center fs-7 fs-md-5 ">全台最專業師資｜到府程式家教｜客製化課程</p>
     </div>
 
 </section>
@@ -71,16 +76,17 @@
         <div class="container px-4">
             <!-- grid system -->
             <ul class="row gx-4">
-                <li class="col-3">
-                    <div class="d-flex flex-column justify-content-center h-100">
-                        <h3 class="program__keyword text-light">手把手帶你 <br> 親自到家教到會
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <div
+                        class="text-md-center text-sm-center text-sm-center text-lg-start d-flex flex-column justify-content-center h-100 mb-sm-7">
+                        <h3 class=" program__keyword text-light">手把手帶你 <br> 親自到家教到會
                         </h3>
                     </div>
                 </li>
 
-                <li class="col-3">
+                <li class="col-lg-3 col-md-6 col-sm-12">
                     <div
-                        class="program__details text-center  h-100 d-flex flex-column justify-content-center text-light">
+                        class="program__details text-center  h-100 d-flex flex-column justify-content-center text-light pt-8 pb-7">
                         <span class="pros__icon pb-6 material-symbols-outlined">
                             code
                         </span>
@@ -88,7 +94,7 @@
                         <p class="fs-5">學習標準化的電腦形式語言<br> 培養運算思維和邏輯素養</p>
                     </div>
                 </li>
-                <li class=" col-3">
+                <li class=" col-lg-3 col-md-6 col-sm-12">
                     <div class="program__details text-center pt-8 pb-7 text-light align-items-center">
                         <span class="pros__icon material-symbols-outlined pb-6">
                             rocket_launch
@@ -97,9 +103,9 @@
                         <p class="fs-5">客製化專屬課表 <br> 讓學習變簡單</p>
                     </div>
                 </li>
-                <li class="col-3">
+                <li class="col-lg-3 col-md-6 col-sm-12">
                     <div
-                        class="program__details text-center h-100 d-flex flex-column justify-content-center text-light ">
+                        class="program__details text-center h-100 d-flex flex-column justify-content-center text-light pt-8 pb-7 ">
                         <span class="pros__icon material-symbols-outlined pb-6">
                             pin_drop
                         </span>
@@ -117,8 +123,8 @@
             <div class="d-flex justify-content-center">
                 <h3 class="program__flow ">預期上課流程</h3>
             </div>
-            <ul class="row list-unstyled d-flex gx-4 ">
-                <li class="col-3 ">
+            <ul class="row list-unstyled d-flex gx-4 gy-6">
+                <li class="col-lg-3 col-md-6 col-sm-12">
                     <div class="program__process p-7 rounded-12 border">
                         <h4 class="pb-3">預約</h4>
                         <p class="program__number px-2 fw-bold">01</p>
@@ -126,7 +132,7 @@
                         <p>由老師安排專屬課程</p>
                     </div>
                 </li>
-                <li class="col-3">
+                <li class="col-lg-3 col-md-6 col-sm-12">
                     <div class="program__process p-7 rounded-12 border">
                         <h4 class="pb-3">付款</h4>
                         <p class="program__number  px-2 fw-bold">02</p>
@@ -134,7 +140,7 @@
                         <p>提供12期分期付款</p>
                     </div>
                 </li>
-                <li class="col-3">
+                <li class="col-lg-3 col-md-6 col-sm-12">
                     <div class="program__process p-7 rounded-12 border">
                         <h4 class="pb-3">上課</h4>
                         <p class="program__number px-2 fw-bold">03</p>
@@ -142,7 +148,7 @@
                         <p>密集性一對一教學</p>
                     </div>
                 </li>
-                <li class="col-3">
+                <li class="col-lg-3 col-md-6 col-sm-12">
                     <div class="program__process p-7 rounded-12 border">
                         <h4 class="pb-3">提供滿意度</h4>
                         <p class="program__number px-2 fw-bold">04</p>
@@ -157,48 +163,61 @@
 
 <section class="program__course">
     <div class="container-fluid bg-dark-d text-light py-11">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center ">
             <h3 class="program__here mb-9">你想要學習的程式，都在這裡</h3>
         </div>
-        <ul class="list-unstyled d-flex gap-3">
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold" href="#">
-                    JavaScript</a>
+        <ul class="list-unstyled d-flex gap-3 overflow-hidden">
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+                <a class="link-light text-decoration-none fw-bold" href="#">
+                    JavaScript
+                </a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">HTML/CSS</a></li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold" href="#">SQL</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+                <a class="link-light text-decoration-none fw-bold" href="#">HTML/CSS
+                </a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold" href="#">Java</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+                <a class="link-light text-decoration-none fw-bold" href="#">SQL
+                </a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">Bash/Shell</a></li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">Python</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+                <a class="link-light text-decoration-none fw-bold" href="#">Java
+                </a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">Python</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+                <a class="link-light text-decoration-none fw-bold" href="#">Bash/Shell
+                </a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold" href="#">PHP</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+                <a class="link-light text-decoration-none fw-bold" href="#">Python</a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">PHP>C++</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+                <a class="link-light text-decoration-none fw-bold" href="#">Python
+                </a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">PHP>SQL</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark">
+                <a class="link-light text-decoration-none fw-bold" href="#">PHP</a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">Python</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a
+                    class="link-light text-decoration-none fw-bold" href="#">PHP>C++</a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">Python</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a
+                    class="link-light text-decoration-none fw-bold" href="#">PHP>SQL</a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold" href="#">PHP</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a
+                    class="link-light text-decoration-none fw-bold" href="#">Python</a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">PHP>C++</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a
+                    class="link-light text-decoration-none fw-bold" href="#">Python</a>
             </li>
-            <li class="border rounded-8 py-4 px-5"><a class="link-light text-decoration-none fw-bold"
-                    href="#">PHP>SQL</a>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a
+                    class="link-light text-decoration-none fw-bold" href="#">PHP</a>
+            </li>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a
+                    class="link-light text-decoration-none fw-bold" href="#">PHP>C++</a>
+            </li>
+            <li class="border rounded-8 py-4 px-5 btn btn-outline-dark"><a
+                    class="link-light text-decoration-none fw-bold" href="#">PHP>SQL</a>
             </li>
         </ul>
     </div>
@@ -210,94 +229,94 @@
             <div class="d-flex justify-content-center">
                 <h3 class="program__hot">熱門推薦課程</h3>
             </div>
-            <ul class="row gx-4 list-unstyled d-flex ">
-                <li class="col-3">
-                    <a class="text-decoration-none text-light" href="#">
-                        <div class="bg-dark-d rounded-24 d-flex flex-column justify-content-between">
-                            <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
-                                <img class="card__img pb-2 rounded-circle" src="./assets/images/teacher01.jpg"
-                                    alt="teacher01">
-                                <p class="pb-4">Belinda</p>
-                                <div>
-                                    <h5 class="pb-5">基礎前端 - HTML</h5>
-                                    <p class="pb-2 text-primary">前端語言</p>
-                                    <p>帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
-                                </div>
-                            </div>
-                            <div
-                                class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
-                                <p class="pe-2">50分鐘</p>
-                                <p class="fs-2">NT$1600</p>
+            <ul class="row gx-4 list-unstyled d-flex gy-4">
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <div
+                        class="program__card text-decoration-none text-light bg-dark-d rounded-24 d-flex flex-column justify-content-between">
+                        <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
+                            <img class="card__img pb-2 rounded-circle" src="./assets/images/teacher01.jpg"
+                                alt="teacher01">
+                            <p class="pb-4">Belinda</p>
+                            <div>
+                                <h5 class="pb-5">基礎前端 - HTML</h5>
+                                <p class="pb-2 text-primary">前端語言</p>
+                                <p>帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
                             </div>
                         </div>
-                    </a>
+                        <div
+                            class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
+                            <p class="pe-2">50分鐘</p>
+                            <p class="fs-2">NT$1600</p>
+                        </div>
+                    </div>
+
                 </li>
-                <li class="col-3">
-                    <a class="text-decoration-none text-light" href="#">
-                        <div class="bg-dark-d rounded-24 d-flex flex-column justify-content-between">
-                            <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
-                                <img class="card__img pb-2 rounded-circle" src="./assets/images/teacher02.jpg"
-                                    alt="teacher01">
-                                <p class="pb-4">Guava</p>
-                                <div>
-                                    <h5 class="pb-2">2022 Python 全攻略｜從入門到實務</h5>
-                                    <p class="pb-2 text-primary">後端語言</p>
-                                    <p>Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
-                                </div>
-                            </div>
-                            <div
-                                class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
-                                <p class="pe-2">50分鐘</p>
-                                <p class="fs-2">NT$2200</p>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <div
+                        class="program__card text-decoration-none text-light bg-dark-d rounded-24 d-flex flex-column justify-content-between">
+                        <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
+                            <img class="card__img pb-2 rounded-circle" src="./assets/images/teacher02.jpg"
+                                alt="teacher01">
+                            <p class="pb-4">Guava</p>
+                            <div>
+                                <h5 class="pb-2">2022 Python 全攻略｜從入門到實務</h5>
+                                <p class="pb-2 text-primary">後端語言</p>
+                                <p>Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
                             </div>
                         </div>
-                    </a>
+                        <div
+                            class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
+                            <p class="pe-2">50分鐘</p>
+                            <p class="fs-2">NT$2200</p>
+                        </div>
+                    </div>
+
                 </li>
-                <li class="col-3">
-                    <a class="text-decoration-none text-light" href="#">
-                        <div class="bg-dark-d rounded-24 d-flex flex-column justify-content-between">
-                            <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
-                                <img class="card__img pb-2 rounded-circle" src="./assets/images/teacher03.jpg"
-                                    alt="teacher03">
-                                <p class="pb-4">Joe</p>
-                                <div>
-                                    <h5 class="pb-2">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
-                                    <p class="pb-2 text-primary">行動應用開發</p>
-                                    <p>Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
-                                </div>
-                            </div>
-                            <div
-                                class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
-                                <p class="pe-2">50分鐘</p>
-                                <p class="fs-2">NT$1800</p>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <div
+                        class="program__card text-decoration-none text-light bg-dark-d rounded-24 d-flex flex-column justify-content-between">
+                        <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
+                            <img class="card__img pb-2 rounded-circle" src="./assets/images/teacher03.jpg"
+                                alt="teacher03">
+                            <p class="pb-4">Joe</p>
+                            <div>
+                                <h5 class="pb-2">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
+                                <p class="pb-2 text-primary">行動應用開發</p>
+                                <p>Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
                             </div>
                         </div>
-                    </a>
+                        <div
+                            class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
+                            <p class="pe-2">50分鐘</p>
+                            <p class="fs-2">NT$1800</p>
+                        </div>
+                    </div>
+
                 </li>
-                <li class="col-3">
-                    <a class="text-decoration-none text-light" href="#">
-                        <div class="bg-dark-d rounded-24 d-flex flex-column justify-content-between">
-                            <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
-                                <img class="card__img pb-2 rounded-circle" src="./assets/images/teacher04.jpg"
-                                    alt="teacher04">
-                                <p class="pb-4">Lina</p>
-                                <div>
-                                    <h5 class="pb-2">Linux 零基礎七天入門｜入門到實務</h5>
-                                    <p class="pb-2 text-primary">作業系統與伺服器</p>
-                                    <p>Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
-                                </div>
-                            </div>
-                            <div
-                                class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
-                                <p class="pe-2">50分鐘</p>
-                                <p class="fs-2">NT$1100</p>
+                <li class="col-lg-3 col-md-6 col-sm-12">
+                    <a
+                        class="program__card text-light text-decoration-none bg-dark-d rounded-24 d-flex flex-column justify-content-between">
+                        <div class="card__body rounded-top d-flex flex-column align-items-center px-4 pt-4 pb-5">
+                            <img class="card__img pb-2 rounded-circle" src="./assets/images/teacher04.jpg"
+                                alt="teacher04">
+                            <p class="pb-4">Lina</p>
+                            <div>
+                                <h5 class="pb-2">Linux 零基礎七天入門｜入門到實務</h5>
+                                <p class="pb-2 text-primary">作業系統與伺服器</p>
+                                <p>Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
                             </div>
                         </div>
+                        <div
+                            class="card-footer d-flex align-items-center justify-content-center border-top text-light py-3 rounded-bottom">
+                            <p class="pe-2">50分鐘</p>
+                            <p class="fs-2">NT$1100</p>
+                        </div>
                     </a>
+
                 </li>
             </ul>
             <div class="d-flex justify-content-center mt-7">
-                <button type="button" class="btn btn-primary px-5 py-2 border-0">所有課程列表</button>
+                <button type="button" class="btn btn-primary px-5 py-2 border-0 text-light">所有課程列表</button>
             </div>
         </div>
     </div>
@@ -306,7 +325,7 @@
 
 <section class="program__pros container-fluid bg-dark-c">
     <ul class=" row d-flex list-unstyled text-light g-0">
-        <li class="card__pros col-3 ">
+        <li class="card__pros col-lg-3 col-md-6 col-sm-12">
             <div class="card__content">
                 <img class="pros__img" src=".//assets/images/info01.jpg" alt="info01">
                 <div class="card__explain">
@@ -318,7 +337,7 @@
                 </div>
             </div>
         </li>
-        <li class="card__pros col-3">
+        <li class="card__pros col-lg-3 col-md-6 col-sm-12">
             <div class="card__content">
                 <img class="pros__img" src=".//assets/images/info02.jpg" alt="info02">
                 <div class="card__explain">
@@ -331,7 +350,7 @@
             </div>
 
         </li>
-        <li class="card__pros col-3 ">
+        <li class="card__pros col-lg-3 col-md-6 col-sm-12">
             <div class="card__content">
                 <img class="pros__img" src=".//assets/images/info03.jpg" alt="info03">
                 <div class="card__explain">
@@ -343,7 +362,7 @@
                 </div>
             </div>
         </li>
-        <li class="card__pros col-3 ">
+        <li class="card__pros col-lg-3 col-md-6 col-sm-12">
             <div class="card__content">
                 <img class="pros__img" src=".//assets/images/info04.jpg" alt="info04">
                 <div class="card__explain">
@@ -365,7 +384,7 @@
                 <h3 class="article__title mb-9">文章分享</h3>
             </div>
             <ul class="row d-flex list-unstyled">
-                <li class="col-4">
+                <li class="col-lg-4 col-md-12">
                     <div class="article__card p-5">
                         <div class="squareRounded squareRounded-topLeft"></div>
                         <div class="squareRounded squareRounded-topRight"></div>
@@ -377,7 +396,7 @@
                         <a class="text-primary fs-6 d-block text-end btn">MORE</a>
                     </div>
                 </li>
-                <li class="col-4 ">
+                <li class="col-lg-4 col-md-12">
                     <div class="article__card p-5">
                         <div class="squareRounded squareRounded-topLeft"></div>
                         <div class="squareRounded squareRounded-topRight"></div>
@@ -389,7 +408,7 @@
                         <a class="text-primary fs-6 d-block text-end btn">MORE</a>
                     </div>
                 </li>
-                <li class="col-4">
+                <li class="col-lg-4 col-md-12">
                     <div class="article__card p-5">
                         <div class="squareRounded squareRounded-topLeft"></div>
                         <div class="squareRounded squareRounded-topRight"></div>
@@ -412,10 +431,11 @@
             <h3 class="feedback__title mb-9">專屬你的學習課程 <br /> 超過 3000 位學員得到了程式超能力</h3>
         </div>
         <ul class="row list-unstyled d-flex justify-content-center">
-            <li class="col-5">
+            <li class="col-lg-5 col-md-12">
                 <img class="feedback__share" src=".//assets/images/share.jpg" alt="share">
+
             </li>
-            <li class="col-4">
+            <li class="col-lg-4 col-md-12">
                 <div class="feedback__card p-5 border bg-light text-index">
                     <img class="feedback__student rounded-circle" src=".//assets/images/student01.jpg" alt="student01">
                     <h6 class="pb-3 fw-bold">老師很有耐心</h6>
@@ -429,31 +449,37 @@
 </section>
 <section class="join">
     <div class="container-fluid py-11 bg-dark d-flex justify-content-center align-items-center">
-        <div class="join__box">
-            <div class=" d-flex justify-content-center align-items-center p-7 bg-index text-light rounded-24">
-                <span class="join__icon pe-8 material-symbols-outlined">
-                    menu_book
-                </span>
-                <div class="d-flex flex-column">
-                    <h2 class="pb-2">加入我們成為導師</h2>
-                    <p class="pe-12">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-9 col-md-12">
+                    <div
+                        class="join__details d-flex justify-content-center align-items-center p-lg-7 p-sm-4 bg-index text-light rounded-24">
+                        <span class="join__icon pe-8 material-symbols-outlined">
+                            menu_book
+                        </span>
+                        <div class="d-flex flex-column text-lg-start text-sm-center">
+                            <h2 class="pb-2">加入我們成為導師</h2>
+                            <p class="join__space pe-12">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
+                        </div>
+                        <button class="btn btn-outline-light">立即預約</button>
+                    </div>
                 </div>
-                <button class="btn btn-outline-light">立即預約</button>
             </div>
         </div>
     </div>
 
 </section>
-<footer>
-    <div class="contanier-fluid bg-dark-a d-flex justify-content-center align-items-center">
-        <div class="text-gray py-4 ">Coding Home © 2022 All Rights Reserved</div>
-    </div>
-</footer>
   </main>
 
 
+  <footer>
+    <div class="contanier-fluid bg-dark-a d-flex justify-content-center align-items-center">
+      <div class="text-gray py-4 ">Coding Home © 2022 All Rights Reserved</div>
+    </div>
+  </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
+
 
 </html>
