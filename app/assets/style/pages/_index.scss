@@ -1,16 +1,18 @@
 .banner {
-  background-image: url("../images/bg_home.jpg");
-  background-position: center;
-  background-size: cover;
-  height: calc(100vh - 90px);
-  background-repeat: no-repeat;
+  .container-fluid {
+    background-image: url("../images/bg_home.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 90px);
+    background-repeat: no-repeat;
 
-  &__dot {
-    width: 10px;
-    height: 10px;
+
+    &__dot {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
-
 
 .navbar {
   background-image: none;
@@ -24,14 +26,14 @@
   &::before {
     content: '';
     position: absolute;
-    width: 54px;
+    width: 48px;
     height: 3px;
     background-color: $primary;
     left: 0;
     bottom: -20%;
 
     @include pad {
-      left: 36%;
+      left: 34%;
       transform: none;
     }
 
@@ -87,7 +89,7 @@
     height: 2px;
     background-color: $primary;
     bottom: -16px;
-    left: 54px;
+    left: 38%;
   }
 }
 
@@ -115,7 +117,7 @@
     height: 2px;
     background-color: $primary;
     bottom: -16px;
-    left: 160px;
+    left: 44%;
 
   }
 }
@@ -131,7 +133,7 @@
     height: 2px;
     background-color: $primary;
     bottom: -16px;
-    left: 60px;
+    left: 38%;
 
   }
 }
@@ -212,7 +214,7 @@
     width: 54px;
     height: 3px;
     background-color: $primary;
-    left: 28px;
+    left: 28%;
     bottom: -20px;
   }
 }
@@ -295,7 +297,12 @@
       height: 2px;
       background-color: $primary;
       bottom: -16px;
-      left: 200px;
+      left: 44%;
+
+      @include pad {
+        left: 110px;
+
+      }
 
     }
 
