@@ -1,9 +1,10 @@
-.gradient-custom {
-    background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+.program__card:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid $primary;
+
 }
 
-.gradient-text-custom {
-    background-image: linear-gradient(180deg, #62DB54, #09ACF5);
-    background-clip: text;
-    color: transparent;
+button:hover {
+    color: black !important;
 }

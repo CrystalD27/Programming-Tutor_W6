@@ -14,6 +14,13 @@ var swiper = new Swiper(".commentSwiper", {
     clickable: true,
   },
 
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
