@@ -17252,7 +17252,7 @@ button:hover {
 }
 
 .program__keyword::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 54px;
   height: 3px;
@@ -17263,7 +17263,7 @@ button:hover {
 
 @media (max-width: 991px) {
   .program__keyword::before {
-    left: 44%;
+    left: 36%;
     -webkit-transform: none;
             transform: none;
   }
