@@ -17312,7 +17312,7 @@ button:hover {
   }
 }
 
-.banner {
+.banner .container-fluid, .banner .container-sm, .banner .container-md, .banner .container-lg, .banner .container-xl, .banner .container-xxl {
   background-image: url("../images/bg_home.jpg");
   background-position: center;
   background-size: cover;
@@ -17320,7 +17320,7 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-.banner__dot {
+.banner .container-fluid__dot {
   width: 10px;
   height: 10px;
 }
@@ -17336,7 +17336,7 @@ button:hover {
 .program__keyword::before {
   content: '';
   position: absolute;
-  width: 54px;
+  width: 48px;
   height: 3px;
   background-color: #62DB54;
   left: 0;
@@ -17345,7 +17345,7 @@ button:hover {
 
 @media (max-width: 991px) {
   .program__keyword::before {
-    left: 36%;
+    left: 34%;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
@@ -17407,7 +17407,7 @@ button:hover {
   height: 2px;
   background-color: #62DB54;
   bottom: -16px;
-  left: 54px;
+  left: 38%;
 }
 
 .program__process {
@@ -17433,7 +17433,7 @@ button:hover {
   height: 2px;
   background-color: #62DB54;
   bottom: -16px;
-  left: 160px;
+  left: 44%;
 }
 
 .program__hot {
@@ -17448,7 +17448,7 @@ button:hover {
   height: 2px;
   background-color: #62DB54;
   bottom: -16px;
-  left: 60px;
+  left: 38%;
 }
 
 .program__pros .card__content {
@@ -17517,7 +17517,7 @@ button:hover {
   width: 54px;
   height: 3px;
   background-color: #62DB54;
-  left: 28px;
+  left: 28%;
   bottom: -20px;
 }
 
@@ -17597,7 +17597,13 @@ button:hover {
   height: 2px;
   background-color: #62DB54;
   bottom: -16px;
-  left: 200px;
+  left: 44%;
+}
+
+@media (max-width: 991px) {
+  .feedback__title::before {
+    left: 110px;
+  }
 }
 
 .feedback__student {
