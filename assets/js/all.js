@@ -1,6 +1,10 @@
 "use strict";
 
-var swiper = new Swiper(".commentSwiper", {
+var _Swiper;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var swiper = new Swiper(".commentSwiper", (_Swiper = {
   slidesPerView: 1,
   // 倒底會回第一張
   loop: true,
@@ -12,10 +16,12 @@ var swiper = new Swiper(".commentSwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
   }
-});
+}, _defineProperty(_Swiper, "pagination", {
+  el: '.swiper-pagination',
+  type: 'bullets'
+}), _defineProperty(_Swiper, "navigation", {
+  nextEl: ".swiper-button-next",
+  prevEl: ".swiper-button-prev"
+}), _Swiper));
 //# sourceMappingURL=all.js.map
